@@ -44,7 +44,7 @@ describe BitteCI do
       config["github_user"] = "hello"
       config["github_token"] = "there"
       config["nomad_token"] = "letmein"
-      config["nomad_datacenters"] = "dc0"
+      config["nomad_datacenters"] = "dc1"
     end
 
     conn = BitteCI::Connection.new(socket, control, final_config).run
